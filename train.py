@@ -115,7 +115,7 @@ if __name__ == '__main__':
                 print('Epoch {}\t' 'Step{}\t' 'loss {:.5f}'.format(epoch+1,i+1,loss.item()))
         
         # validation
-        model.val()
+        model.eval()
         cnt_val = 0
         val_total_loss = 0
         val_ae_loss = 0
